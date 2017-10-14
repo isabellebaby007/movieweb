@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>免vip看视频</title>
+    <meta name="keywords" content="优酷VIP,爱奇艺VIP,腾讯VIP,乐视VIP,芒果VIP,搜狐视频，全网视频解析">
+    <meta name="description"
+          content="仅供测试视频解析">
+    <link type="image/x-icon" href="./setting/siye.ico" rel="icon">
+    <link href="./setting/bootstrap.min.css" rel="stylesheet">
+    <link href="./setting/index.css" rel="stylesheet" type="text/css">
+    <script src="./setting/jquery.min.js"></script>
+    <script src="./setting/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./setting/siye.ico">
+    <link rel="bookmark" href="./setting/siye.ico">
+    <script type="text/javascript">
+        function dihejk() {
+            var diz = document.getElementById("url").value;
+            var jkurl = document.getElementById("url");
+            var jk = document.getElementById("url").selectedIndex;
+            var jkv ="http://vip.jlsprh.com/5.php?url=";
+            var cljurl = document.getElementById("player");
+            cljurl.src = jkv + diz
+        }
+
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        $(function(){
+            if(GetQueryString("url") != null){
+                url = GetQueryString("url")
+                $('#url').val(url)
+                dihejk()
+            }
+
+        })
+    </script>
+</head>
+<body><br>
+<script type="text/javascript">
+    /* 鼠标点击特效 */
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#ff6651"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function() {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+
+<div class="container" style="padding-top:0px;" id="wbk">
+
+
+    <br>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body">
+            <iframe src="./setting/load.html" id="player" width="100%" height="500px" allowtransparency="false"
+                    frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <br>
+
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg"
+                                                                style="width: 80px; ">请选择要观看的集数</span><select
+                    class="form-control input-lg" id="url">
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/c00240a6gy0.html" selected="">第1集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/q00248qhy8z.html">第2集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/d00246v2bjn.html">第3集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/u0024qpoju0.html">第4集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/v0024gwhbwl.html">第5集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/z0024gb436j.html">第6集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/n002415cpjj.html">第7集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/z0024idz85a.html">第8集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/f00248hnhnp.html">第9集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/o0024wuvh19.html">第10集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/v0024avlgdu.html">第11集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/u0024a69exa.html">第12集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/s00248z21zt.html">第13集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/m0024yeu6dv.html">第14集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/q0024zeg6wf.html">第15集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/c0024aqxtu9.html">第16集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/b00245hm2ih.html">第17集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/h00244rjj9p.html">第18集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/m00246z70i3.html">第19集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/f0024cacved.html">第20集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/h00240ruykz.html">第21集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/e0024hrqbwq.html">第22集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/r0024anywpd.html">第23集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/q0024j73spw.html">第24集</option>
+                <option value="https://v.qq.com/x/cover/vz351chxilgiopm/f0024l6nti2.html">第25集</option>
+            </select></div>
+            <br>
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">播放</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <br>
+    <br>
+    <div class="copyright">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">技术支持:isabellezhou@163.com</div>
+            </div>
+        </div>
+    </div>
+    <br></body>
+<div></div>
+</html>

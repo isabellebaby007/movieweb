@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>免vip看视频</title>
+    <meta name="keywords" content="优酷VIP,爱奇艺VIP,腾讯VIP,乐视VIP,芒果VIP,搜狐视频，全网视频解析">
+    <meta name="description"
+          content="仅供测试视频解析">
+    <link type="image/x-icon" href="./setting/siye.ico" rel="icon">
+    <link href="./setting/bootstrap.min.css" rel="stylesheet">
+    <link href="./setting/index.css" rel="stylesheet" type="text/css">
+    <script src="./setting/jquery.min.js"></script>
+    <script src="./setting/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="./setting/siye.ico">
+    <link rel="bookmark" href="./setting/siye.ico">
+    <script type="text/javascript">
+        function dihejk() {
+            var diz = document.getElementById("url").value;
+            var jkurl = document.getElementById("url");
+            var jk = document.getElementById("url").selectedIndex;
+            var jkv ="http://vip.jlsprh.com/7.php?url=";
+            var cljurl = document.getElementById("player");
+            cljurl.src = jkv + diz
+        }
+
+        function GetQueryString(name)
+        {
+            var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return  unescape(r[2]); return null;
+        }
+        $(function(){
+            if(GetQueryString("url") != null){
+                url = GetQueryString("url")
+                $('#url').val(url)
+                dihejk()
+            }
+
+        })
+    </script>
+</head>
+<body><br>
+<script type="text/javascript">
+/* 鼠标点击特效 */
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+"z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+"top": y - 20,
+"left": x,
+"position": "absolute",
+"font-weight": "bold",
+"color": "#ff6651"
+        });
+        $("body").append($i);
+        $i.animate({
+"top": y - 180,
+"opacity": 0
+        },
+        1500,
+function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+<div class="container" style="padding-top:0px;" id="wbk">
+
+
+    <br>
+    <div class="panel panel-default">
+        <div id="kj" class="panel-body">
+            <iframe src="./setting/load.html" id="player" width="100%" height="500px" allowtransparency="false"
+                    frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
+    <br>
+
+    <div class="col-md-14 column">
+        <form method="get">
+            <div class="input-group" style="width: 100%;"><span class="input-group-addon input-lg"
+                                                                style="width: 80px; ">请选择要观看的集数</span><select
+                    class="form-control input-lg" id="url">
+                <option value="http://v.youku.com/v_show/id_XMjk4ODAyMzIyOA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=baiduald1705" selected="">第1集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODAyMzU0MA==.html?tpa=dW5pb25faWQ9MTAzNzUzXzEwMDAwMV8wMV8wMQ&refer=baiduald1705">第2集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODAyMzQyOA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!3~A">第3集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODA1MzI0NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!4~A">第4集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODA1MzY3Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!5~A">第5集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODA2Mzc5Mg==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!6~A">第6集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODA4MjI4NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!7~A">第7集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODA4MzI0NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!8~A">第8集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODExNTYyOA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!9~A">第9集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODEzMTc4OA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!10~A">第10集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODEzMjM1Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!11~A">第11集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODE3MzE4MA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!12~A">第12集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODE5ODgyMA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!13~A">第13集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODE5OTk0NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!14~A">第14集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODI1MDYzNg==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!15~A">第15集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODI3MTA2NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!16~A">第16集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODI3NTU1Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!17~A">第17集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODMwODg1Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!18~A">第18集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODMyMzAwMA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!19~A">第19集</option>
+                <option value="http://v.youku.com/v_show/id_XMjk4ODMzMDU0MA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!20~A">第20集</option>
+                <option value="http://v.youku.com/v_show/id_XMzAyODg0NDU4NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!21~A">第21集</option>
+                <option value="http://v.youku.com/v_show/id_XMzAyODg0NDg2MA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!22~A">第22集</option>
+                <option value="http://v.youku.com/v_show/id_XMzAzMDA3MTUyMA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!23~A">第23集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA0MTYwNjE4MA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!24~A">第24集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA0MTYwNjY4OA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!25~A">第25集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA0MjA1NzA3Ng==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!26~A">第26集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA0MTYzNDM4NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!27~A">第27集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA1NjU2MDk2MA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!28~A">第28集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA1NjU2NjE1Mg==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!29~A">第29集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA1ODA5Njg0NA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!30~A">第30集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA1NTg0MzgwOA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!31~A">第31集</option>
+                <option value="http://v.youku.com/v_show/id_XMzA1NTg0NjA4OA==.html?spm=a2h0j.8191423.vpofficiallistv5_wrap.5~5~5~5!32~A">第32集</option>
+            </select></div>
+            <br>
+            <div>
+                <button id="bf" type="button" class="btn btn-success btn-lg btn-block" onclick="dihejk()">播放</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+<br>
+    <br>
+    <div class="copyright">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12">技术支持:isabellezhou@163.com</div>
+            </div>
+        </div>
+    </div>
+    <br></body>
+<div></div>
+</html>

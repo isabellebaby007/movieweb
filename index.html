@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>哈迪斯电影院</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0,user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  
+  <link rel="alternate icon" type="img/hengwang-1.png" href="img/hengwang-1.png">
+  <link rel="stylesheet" href="css/amazeui.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+
+
+
+
+
+
+<body>
+<script type="text/javascript">
+    /* 鼠标点击特效 */
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+        $("body").click(function(e) {
+            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+            var $i = $("<span/>").text(a[a_idx]);
+            a_idx = (a_idx + 1) % a.length;
+            var x = e.pageX,
+                y = e.pageY;
+            $i.css({
+                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+                "top": y - 20,
+                "left": x,
+                "position": "absolute",
+                "font-weight": "bold",
+                "color": "#ff6651"
+            });
+            $("body").append($i);
+            $i.animate({
+                    "top": y - 180,
+                    "opacity": 0
+                },
+                1500,
+                function() {
+                    $i.remove();
+                });
+        });
+    });
+</script>
+<header class="am-topbar header">
+	<div class="am-container-1">
+		<div class="left hw-logo">
+
+		  <img class="word" src="img/hades.png"></img>
+    </div>
+  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+          data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+      class="am-icon-bars"></span></button>
+
+  <div class="am-collapse am-topbar-collapse right" id="doc-topbar-collapse">
+    
+
+    <div class=" am-topbar-left am-form-inline am-topbar-right" role="search">
+      <ul class="am-nav am-nav-pills am-topbar-nav hw-menu">
+      <li class="hw-menu-active"><a href="index.html">首页</a></li>
+      <li ><a href="dianshiju.html">电视剧</a></li>
+      <li><a href="http://www.200919.com/">电影</a></li>
+      <li><a href="http://music.2333.me/">音乐</a></li>
+      <li><a href="http://www.zhiboo.net/">电视台直播</a></li>
+      <li><a href="news.html">关于我们</a></li>
+      <li><a href="http://www.rainymood.com/">催眠白噪声</a></li>
+      <li><a href="http://nba.tmiaoo.com/nba.html">免费看NBA赛事直播</a></li>
+    </ul>
+    </div>
+
+  </div>
+  </div>
+</header>
+<div class="rollpic">
+	 <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}' >
+	  <ul class="am-slides">
+	      <li><img src="img/lunbo1.jpg"/></li>
+	      <li><img src="img/lunbo2.jpg"/></li>
+	      <li><img src="img/lunbo3.jpg"/></li>
+	  </ul>
+    </div>
+</div>
+<div class="am-container-1">
+	<div class="solutions part-all">
+		<div class="part-title">
+			<a href="solutions.html">
+			<i class="am-icon-lightbulb-o part-title-i"></i>
+			<span class="part-title-span">本站业务</span>
+
+			</a>
+		</div>
+		<ul class="am-g part-content solutions-content">
+		  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+		  	<i class="am-icon-file-safari solution-circle"></i>
+		  	<span class="solutions-title">影视剧资源</span>
+		  	<p class="solutions-way">免费提供热门影视剧，定期更新</p>
+		  </li>
+		  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+		  	<i class="am-icon-tv solution-circle"></i>
+		  	<span class="solutions-title">电视台直播</span>
+		  	<p class="solutions-way">免费转接电视台直播</p>
+		  </li>
+		  <li class="am-u-sm-4 am-u-md-4 am-u-lg-4">
+		  	<i class="am-icon-user solution-circle"></i>
+		  	<span class="solutions-title">广告承接</span>
+		  	<p class="solutions-way">欢迎订购广告位，流量入口</p>
+		  </li>
+
+		  
+		</ul>
+		
+	</div>
+	</div>
+	<div class="gray-li">
+	<div class="customer-case part-all ">
+		<div class="part-title">
+			<a href="customer-case.html">
+			<i class=" am-icon-briefcase part-title-i"></i>
+			<span class="part-title-span">最热影视剧排行榜top8</span>
+
+			</a>
+		</div>
+	
+	
+		 <ul data-am-widget="gallery" class=" am-avg-sm-1
+  am-avg-md-4 am-avg-lg-4 am-gallery-bordered customer-case-content" >
+      <li class="case-li am-u-sm-3 am-u-md-3 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="/dianshiju/baiye.html" >
+              <img src="img/baiye.jpg"  />
+                
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">白夜追凶</h3>
+              <p>2017-10-01</p>
+              <a href="./dianshiju/baiye.html"><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/hesuo.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">何所冬暖和何所夏凉</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a >
+              <img src="img/shituxingzhe.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">使徒行者2</h3>
+              <p>2017-10-11</p>
+              <a href="./dianshiju/shituxingzhe.html"><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/wuzhengzhizui.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">无证之罪</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/nanianhuakai.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">那年花开月正圆</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/chongfei.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">双世宠妃</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/meiwei.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">美味奇缘</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      <li class="case-li am-u-sm-6 am-u-md-6 am-u-lg-3">
+        <div class="am-gallery-item case-img1">
+            <a href="#" >
+              <img src="img/xingkong.jpg"  />
+            </a>
+        </div>
+        <div class="case-li-mengban">
+        	<div class=" case-word">
+              <h3 class="am-gallery-title">那片星空那片海2</h3>
+              <p>2017-10-11</p>
+              <a><span><i class="am-icon-eye"></i>查看更多</span></a>
+           </div>
+        </div>
+      </li>
+      
+  </ul>
+
+		<div class="part-title">
+		    	
+		</div>
+		</div>
+</div>	
+	
+
+
+
+		
+		
+<div class=" news-all">
+	<div class="am-container-1">
+<div class="news part-all">
+		<div class="part-title">
+			<a href="news.html">
+			<i class="am-icon-newspaper-o part-title-i"></i>
+			<span class="part-title-span">最近更新黑板报</span>
+
+			</a>
+		</div>
+		<div class="news-content ">
+				<ul class="news-content-ul">
+					<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+						<a href="#">
+						    <div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
+						    	<div class="news-img">
+						    	<img src="img/news.png"></img>
+						    	</div>
+						    </div>
+						    <div  class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
+										<span class="news-right-title">白夜追凶更新</span>
+										<p class="news-right-time">2017-10-11</p>
+										<p class="news-right-words">已完结，大结局更新</p>
+										<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>
+								 </div>	
+						<div class="clear"></div>
+						</a>
+					</li>
+					<li class="am-u-sm-12 am-u-md-6 am-u-lg-6">
+						<a href="#">
+						    <div class=" am-u-sm-12 am-u-md-12 am-u-lg-5">
+						    	<div class="news-img">
+						    	<img src="img/news1.png"></img>
+						    	</div>
+						    </div>
+						    <div  class=" am-u-sm-12 am-u-md-12 am-u-lg-7">
+										<span class="news-right-title">新上架电视剧</span>
+										<p class="news-right-time">2017-10-12</p>
+										<p class="news-right-words">何所冬暖何所夏凉</p>
+										<a><span class="see-more2">查看更多<i class="am-icon-angle-double-right"></i></span></a>
+								 </div>	
+						<div class="clear"></div>
+						</a>
+					</li>		
+					<div class="clear"></div>
+				</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+		
+
+		<!--<ul class="customer-content">
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn4.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn5.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn6.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn7.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn8.png"/></div></li>
+			<li class="am-u-sm-6 am-u-md-4 am-u-lg-2"><div><img src="img/ptn4.png"/></div></li>
+			<div class="clear"></div>
+		</ul>-->
+</div>
+</div>
+<footer class="footer ">
+	
+<ul>
+        
+        <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 part-5-li2">
+            <div class="part-5-title">联系我们</div>
+            <div class="part-5-words2">
+                <span>组织名称：specter</span>
+                <span>邮箱:isabellezhou@163.com</span>
+                <span><i class="am-icon-phone"></i><em >17130044970</em></span>
+            </div>
+        </li>
+        <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 ">
+            <div class="part-5-title">相关链接</div>
+            <div class="part-5-words2">
+                <ul class="part-5-words2-ul">
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="dianshiju.html">电视剧</a></li>
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="product-show.html">电影</a></li>
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="customer-case.html">音乐</a></li>
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="service-center.html">电视台直播</a></li>
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="about-us.html">关于我们</a></li>
+                    <li class="am-u-lg-4 am-u-md-6 am-u-sm-4"><a href="recruit.html">哈迪斯商城</a></li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+        </li>
+        <div class="clear"></div>
+    </ul>
+   
+</footer>
+
+
+
+</body>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="js/amazeui.min.js"></script>
+<script src="js/scroll.js"></script>
+<script type="text/javascript">
+
+</script>
+</html>
